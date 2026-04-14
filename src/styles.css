@@ -89,6 +89,14 @@ main {
   top: -38px;
 }
 
+forecast-container {
+  display: flex;
+}
+
+
+
+
+
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;

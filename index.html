@@ -16,34 +16,34 @@
   <body>
     <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form class="search-form"id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-input"
-            id="search-input"
+            class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="current-weather">
+        <div class="weather-app-data">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
-            <p class="current-details">
-              <span id="current-time"></span>, 
-              <span id="current-description"></span> <br />
-              Humidity: <strong id="current-humidity">87%</strong>, Wind: <strong id="current-wind">7.2km/h</strong>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>, 
+              <span id="description"></span> <br />
+              Humidity: <strong id="humidity">87%</strong>, Wind: <strong id="wind-speed">7.2km/h</strong>
             </p>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon" id="current-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
+          <div class="weather-app-temperature-container">
+           <div id="icon"></div>
+           <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
+      <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         <p>
